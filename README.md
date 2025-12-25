@@ -9,18 +9,18 @@
 <ul>
     <li><strong>批量处理</strong>：支持拖拽文件夹或多个文件，自动队列处理。</li>
     <li><strong>多模型支持</strong>：集成硅基流动（DeepSeek-OCR）、MinerU、阿里通义千问、字节豆包、Google Gemini等。</li>
-    <li><strong>智能识别</strong>：利用大模型能力，识别文字、保留表格结构。</li>
+    <li><strong>智能识别</strong>：利用大模型能力，识别文字、保留表格结构，尤其是部分模型擅长处理中文古籍。</li>
     <li><strong>结果导出</strong>：自动保存为 Markdown (.md) 格式，方便编辑和阅读。.md文件可以右键使用“记事本”打开，也可以下载安装Typora、MarkText、VS Code等打开。</li>
 </ul>
 
 <h2>二、功能详解</h2>
 <hr />
 <ul>
-    <li><strong>API 配置</strong><br />在右侧面板配置不同的 AI 模型服务商。</li>
+    <li><strong>API 配置</strong><br /> 在配置面板提供多个AI 模型服务商选项。</li>
     <li><strong>参数调整</strong><br />支持调整并发线程数（提高速度）、PDF 渲染 DPI（提高清晰度）。</li>
     <li><strong>任务管理</strong>
         <ul>
-            <li>添加文件：点击按钮或拖拽文件/文件夹到左上角区域。</li>
+            <li>添加文件：点击按钮或拖拽文件/文件夹到待识别区域。</li>
             <li>进度监控：左下角实时显示总进度、当前文件进度、页数进度。</li>
             <li>自动清理：识别成功的文件自动移出列表，失败的文件保留以便重试。</li>
         </ul>
@@ -51,7 +51,7 @@
 <h3>3. 字节豆包 (Doubao)</h3>
 <ul>
     <li><strong>[参考地址]</strong>: <a href="https://www.volcengine.com/docs/82379/1399009" target="_blank">https://www.volcengine.com/docs/82379/1399009</a></li>
-    <li><strong>[推荐场景]</strong>: 中文文档 / 日常图片 / 快速识别。</li>
+    <li><strong>[推荐场景]</strong>: 中文古籍 / 普通文档和图片 / 快速识别。</li>
     <li><strong>[ 优  点 ]</strong>: 中文语义理解能力强，响应速度快，对常规古籍识别效果良好。</li>
     <li><strong>[ 缺  点 ]</strong>: 有敏感词监测。</li>
 </ul>
@@ -59,7 +59,7 @@
 <h3>4. 阿里通义千问 (Qwen)</h3>
 <ul>
     <li><strong>[参考地址]</strong>: <a href="https://help.aliyun.com/zh/model-studio/what-is-model-studio" target="_blank">https://help.aliyun.com/zh/model-studio/what-is-model-studio</a></li>
-    <li><strong>[推荐场景]</strong>: 综合首选 / 中文古籍 / 复杂排版还原。</li>
+    <li><strong>[推荐场景]</strong>: 中文古籍 / 普通文档和图片 / 复杂排版还原。</li>
     <li><strong>[ 优  点 ]</strong>: 识别率顶尖，对古籍、手写体和竖排文字支持极好，版面还原度最高。</li>
     <li><strong>[ 缺  点 ]</strong>: 监测较严，会拒绝识别带有敏感词的整页内容。</li>
 </ul>
@@ -67,8 +67,8 @@
 <h3>5. 智谱 GLM (ZhipuAI)</h3>
 <ul>
     <li><strong>[参考地址]</strong>: <a href="https://bigmodel.cn/" target="_blank">https://bigmodel.cn/</a></li>
-    <li><strong>[推荐场景]</strong>: 政企办公 / 中文长文档处理。</li>
-    <li><strong>[ 优  点 ]</strong>: 国产自研，API 兼容性好（OpenAI 接口风格），综合语义理解稳健；商用性价比高。</li>
+    <li><strong>[推荐场景]</strong>: 中文古籍 / 普通文档和图片 / 中文长文档处理。</li>
+    <li><strong>[ 优  点 ]</strong>: 商用性价比高。</li>
     <li><strong>[ 缺  点 ]</strong>: 在极高分辨率图片的精细识别上，相较于 Qwen3-Max 略有差距。</li>
 </ul>
 
@@ -84,12 +84,12 @@
 <p><strong>[推荐配置]</strong></p>
 <ul>
     <li>识别中文古籍：强烈推荐通义千问或豆包。</li>
-    <li>识别普通文档：可以使用MinerU、 DeepSeek-OCR、或智谱 GLM。</li>
+    <li>识别普通文档：可以使用MinerU、 DeepSeek-OCR、智谱 GLM。</li>
 </ul>
 
 <h2>四、API 申请与配置教程</h2>
 <hr />
-<p>本软件基于大模型 API，需要您自行申请 API Key。</p>
+<p>本软件基于大模型 API，需要您自行申请并填入 API Key。</p>
 
 <h3>1、硅基流动 (DeepSeek/VLM)</h3>
 <p style="margin-left: 20px;">
