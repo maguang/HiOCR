@@ -91,51 +91,54 @@
 <hr />
 <p>本软件基于大模型 API，需要您自行申请 API Key。</p>
 
-<h3>1. 硅基流动 (DeepSeek/VLM)</h3>
-<ol>
-    <li>访问：<a href="https://cloud.siliconflow.cn/" target="_blank">https://cloud.siliconflow.cn/</a></li>
-    <li>注册账号（通常有免费额度）。</li>
-    <li>生成 API Key 并填入软件。</li>
-</ol>
+<h3>1、硅基流动 (DeepSeek/VLM)</h3>
+<p style="margin-left: 20px;">
+    1）访问：<a href="https://cloud.siliconflow.cn/" target="_blank">https://cloud.siliconflow.cn/</a><br />
+    2）注册账号（通常有免费额度）。<br />
+    3）生成 API Key 并填入软件。
+</p>
 
-<h3>2. MinerU（官方 API）</h3>
-<ol>
-    <li>访问：<a href="https://mineru.net/" target="_blank">https://mineru.net/</a> ，注册并登录。</li>
-    <li>在官网申请 Token（API Token）。</li>
-    <li>将 Token 填入软件的 API Key（或 Token）字段。</li>
-    <li>如软件需要填写鉴权方式，请使用：Authorization: Bearer &lt;Token&gt;</li>
-    <li>注意：如遇失败，请检查文件大小与页数是否超限（例如：200MB、600页等限制）。</li>
-</ol>
+<h3>2、MinerU（官方 API）</h3>
+<p style="margin-left: 20px;">
+    1）访问：<a href="https://mineru.net/" target="_blank">https://mineru.net/</a> ，注册并登录。<br />
+    2）在官网申请 Token（API Token）。<br />
+    3）将 Token 填入软件的 API Key（或 Token）字段。<br />
+    4）如软件需要填写鉴权方式，请使用：de>Authorization: Bearer &lt;Token&gt;</code><br />
+    5）注意：如遇失败，请检查文件大小与页数是否超限（例如：200MB、600页等限制）。
+</p>
 
-<h3>3. 字节豆包</h3>
-<ol>
-    <li>访问：<a href="https://console.volcengine.com/ark/" target="_blank">https://console.volcengine.com/ark/</a></li>
-    <li>创建推理接入点，获取 API Key。</li>
-    <li>将 API Key 填入软件。</li>
-</ol>
+<h3>3、字节豆包</h3>
+<p style="margin-left: 20px;">
+    1）访问：<a href="https://console.volcengine.com/ark/" target="_blank">https://console.volcengine.com/ark/</a><br />
+    2）创建推理接入点，获取 API Key。<br />
+    3）将 API Key 填入软件。
+</p>
 
-<h3>4. 阿里云通义千问 (Qwen)</h3>
-<ol>
-    <li>访问：<a href="https://bailian.console.aliyun.com/" target="_blank">https://bailian.console.aliyun.com/</a></li>
-    <li>登录并开通“模型服务”。</li>
-    <li>在“API-KEY 管理”中创建新的 API Key。</li>
-    <li>复制 Key 填入软件，Base URL 默认即可。<br />默认地址：<a href="https://dashscope.aliyuncs.com/compatible-mode/v1" target="_blank">https://dashscope.aliyuncs.com/compatible-mode/v1</a></li>
-</ol>
+<h3>4、阿里云通义千问 (Qwen)</h3>
+<p style="margin-left: 20px;">
+    1）访问：<a href="https://bailian.console.aliyun.com/" target="_blank">https://bailian.console.aliyun.com/</a><br />
+    2）登录并开通“模型服务”。<br />
+    3）在“API-KEY 管理”中创建新的 API Key。<br />
+    4）复制 Key 填入软件，Base URL 默认即可。<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;默认地址：<a href="https://dashscope.aliyuncs.com/compatible-mode/v1" target="_blank">https://dashscope.aliyuncs.com/compatible-mode/v1</a>
+</p>
 
-<h3>5. 智谱 GLM（ZhipuAI / GLM）</h3>
-<ol>
-    <li>访问：<a href="https://open.bigmodel.cn/" target="_blank">https://open.bigmodel.cn/</a> ，注册并获取 API Key。</li>
-    <li>将 API Key 填入软件。</li>
-    <li>Base URL（OpenAI 兼容方式）填写：<br /><a href="https://open.bigmodel.cn/api/paas/v4/" target="_blank">https://open.bigmodel.cn/api/paas/v4/</a></li>
-    <li>说明：智谱提供 OpenAI API 兼容接口，迁移时通常只需替换 api_key 与 base_url。</li>
-</ol>
+<h3>5、智谱 GLM（ZhipuAI / GLM）</h3>
+<p style="margin-left: 20px;">
+    1）访问：<a href="https://open.bigmodel.cn/" target="_blank">https://open.bigmodel.cn/</a> ，注册并获取 API Key。<br />
+    2）将 API Key 填入软件。<br />
+    3）Base URL（OpenAI 兼容方式）填写：<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://open.bigmodel.cn/api/paas/v4/" target="_blank">https://open.bigmodel.cn/api/paas/v4/</a><br />
+    4）说明：智谱提供 OpenAI API 兼容接口，迁移时通常只需替换 api_key 与 base_url。
+</p>
 
-<h3>6. Google Gemini</h3>
-<ol>
-    <li>访问 Google AI Studio: <a href="https://aistudio.google.com/" target="_blank">https://aistudio.google.com/</a>，在“API Keys”页面创建并管理 Gemini API Key。</li>
-    <li>将 Key 填入软件（或按软件要求设置环境变量）。</li>
-    <li>如需按 REST 方式调用，可参考接口形式：<br />https://generativelanguage.googleapis.com/v1beta/models/&lt;model&gt;:generateContent</li>
-</ol>
+<h3>6、Google Gemini</h3>
+<p style="margin-left: 20px;">
+    1）访问 Google AI Studio: <a href="https://aistudio.google.com/" target="_blank">https://aistudio.google.com/</a>，在“API Keys”页面创建并管理 Gemini API Key。<br />
+    2）将 Key 填入软件（或按软件要求设置环境变量）。<br />
+    3）如需按 REST 方式调用，可参考接口形式：<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://generativelanguage.googleapis.com/v1beta/models/&lt;model&gt;:generateContent
+</p>
 
 <h2>五、常见问题 (FAQ)</h2>
 <hr />
