@@ -159,9 +159,9 @@ A: 本软件全程支持 UTF-8，确保您的系统路径没有特殊偏僻字�
 <ul>
     <li><strong>软件名称</strong>：HiOCR</li>
     <li><strong>版本</strong>：v2.0</li>
-    <li><strong>开发</strong>：马光 （<a href="http://www.maguang.net" target="_blank">http://www.maguang.net</a>，<a href="http://www.haijiaoshi.com" target="_blank">www.haijiaoshi.com</a>）</li>
-    <li><strong>开源地址</strong>：<a href="https://github.com/maguang/HiOCR" target="_blank">https://github.com/maguang/HiOCR</a></li>
-    <li><strong>版本更新地址</strong>： <a href="https://pan.baidu.com/s/1WchKiuVp9kKkqj4yqSBg4Q?pwd=6666" target="_blank">百度网盘下载</a> 提取码: 6666</li>
+    <li><strong>开发者</strong>：马光 （<a href="http://www.maguang.net" target="_blank">http://www.maguang.net</a>，<a href="http://www.haijiaoshi.com" target="_blank">www.haijiaoshi.com</a>）</li>
+    <li><strong>下载与更新地址1</strong>：<a href="https://github.com/maguang/HiOCR" target="_blank">https://github.com/maguang/HiOCR</a></li>
+    <li><strong>下载与更新地址2</strong>： <a href="https://pan.baidu.com/s/1WchKiuVp9kKkqj4yqSBg4Q?pwd=6666" target="_blank">百度网盘下载</a> 提取码: 6666</li>
     <li><strong>构建日期</strong>：2025-12-25</li>
 </ul>
 
