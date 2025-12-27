@@ -32,37 +32,37 @@ HiOCR 是一款面向新手的傻瓜式批量 OCR（文字识别）工具，专�
 不同模型各有千秋，建议根据文档类型选择：
 
 ### 1. MinerU (官方 API)，免费
-*   **[参考地址]**: https://www.aipintai.com/mineru.html
+*   **[参考地址]**: https://mineru.net/apiManage/docs
 *   **[推荐场景]**: 学术图书论文 / 复杂 PDF 布局 / 导出 Markdown。
 *   **[ 优  点 ]**: 免费，每天至少2000页额度；由 OpenDataLab 开发，专为 PDF 版面分析优化，公式与表格提取能力强。
 *   **[ 缺  点 ]**: 中文古籍识别效果较差；文件有大小和页码限制：≤200M，≤600页。
 
 ### 2. 硅基流动 (DeepSeek-OCR、GLM-4.1V-9B-Thinking)，免费
-*   **[参考地址]**: https://siliconflow.cn/pricing
+*   **[参考地址]**: https://cloud.siliconflow.cn/
 *   **[推荐场景]**: 通用文档 / 代码识别 / 高性价比方案。
 *   **[ 优  点 ]**: 免费额度高，推理速度快。
 *   **[ 缺  点 ]**: 复杂版面还原度稍逊，精确度不高，中文古籍识别效果较差。
 
-### 3. 字节豆包 (Doubao)
-*   **[参考地址]**: https://www.volcengine.com/docs/82379/1399009
+### 3. 火山引擎-字节豆包 (Doubao)
+*   **[参考地址]**: https://www.volcengine.com/docs/82379/1541594?lang=zh
 *   **[推荐场景]**: 中文古籍 / 普通文档和图片 / 快速识别。
 *   **[ 优  点 ]**: 中文语义理解能力强，响应速度快，对常规古籍识别效果良好。
 *   **[ 缺  点 ]**: 有敏感词监测。
 
 ### 4. 阿里通义千问 (Qwen)
-*   **[参考地址]**: https://help.aliyun.com/zh/model-studio/what-is-model-studio
+*   **[参考地址]**: https://help.aliyun.com/zh/model-studio/get-api-key?spm=0.0.0.i1
 *   **[推荐场景]**: 综合首选 / 中文古籍 / 复杂排版还原。
 *   **[ 优  点 ]**: 识别率顶尖，对古籍、手写体和竖排文字支持极好，版面还原度最高。
 *   **[ 缺  点 ]**: 监测较严，会拒绝识别带有敏感词的整页内容。
 
 ### 5. 智谱 GLM (ZhipuAI)
-*   **[参考地址]**: https://bigmodel.cn/
+*   **[参考地址]**: https://docs.bigmodel.cn/cn/api/introduction
 *   **[推荐场景]**: 中文古籍 / 普通文档和图片 / 中文长文档处理。
 *   **[ 优  点 ]**: 商用性价比高。
 *   **[ 缺  点 ]**: 在极高分辨率图片的精细识别上，相较于 Qwen3-Max 略有差距。
 
 ### 6. Google Gemini
-*   **[参考地址]**: https://ai.google.dev/gemini-api/docs/ai-studio-quickstart?hl=zh-cn
+*   **[参考地址]**: https://aistudio.google.com/app/api-keys?hl=zh-cn
 *   **[推荐场景]**: 外文文档 / 多语言混合 / 极长文本。
 *   **[ 优  点 ]**: 全球领先多模态能力，多语言支持极佳，支持超长上下文。
 *   **[ 缺  点 ]**: 在国内使用需要特殊的网络环境 (VPN)。
