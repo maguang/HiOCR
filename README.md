@@ -74,40 +74,41 @@ HiOCR 是一款面向新手的傻瓜式批量 OCR（文字识别）工具，专�
 
 
 ## 四、API 申请与配置教程
+
 本软件基于大模型 API，需要您自行申请并填入 API Key。
 
-1. **MinerU（官方 API）**
-    1）访问：https://mineru.net/ ，注册并登录。
-    2）在官网申请 Token（API Token）。
-    3）将 Token 填入软件的 API Key（或 Token）字段。
-    4）如软件需要填写鉴权方式，请使用：`Authorization: Bearer <Token>`
-    5）注意：如遇失败，请检查文件大小与页数是否超限（例如：200MB、600页等限制）。
+### 1. MinerU（官方 API）
+1）访问：https://mineru.net/ ，注册并登录。  
+2）在官网申请 Token（API Token）。  
+3）将 Token 填入软件的 API Key（或 Token）字段。  
+4）如软件需要填写鉴权方式，请使用：Authorization: Bearer <Token>  
+5）注意：如遇失败，请检查文件大小与页数是否超限（例如：200MB、600页等限制）。  
 
-2. **硅基流动 (DeepSeek/VLM)**
-    1）访问：https://cloud.siliconflow.cn/
-    2）注册账号（通常有免费额度）。
-    3）生成 API Key 并填入软件。
+### 2. 硅基流动 (DeepSeek/VLM)
+1）访问：https://cloud.siliconflow.cn/  
+2）注册账号（通常有免费额度）。  
+3）生成 API Key 并填入软件。  
 
-3. **字节豆包**
-    1）访问：https://console.volcengine.com/ark/
-    2）创建推理接入点，获取 API Key。
-    3）将 API Key 填入软件。
+### 3. 字节豆包
+1）访问：https://console.volcengine.com/ark/  
+2）创建推理接入点，获取 API Key。  
+3）将 API Key 填入软件。  
 
-4. **阿里云通义千问 (Qwen)**
-    1）访问：https://bailian.console.aliyun.com/
-    2）登录并开通“模型服务”。
-    3）在“API-KEY 管理”中创建新的 API Key。
-    4）复制 Key 填入软件，Base URL 默认即可。
-       默认地址：`https://dashscope.aliyuncs.com/compatible-mode/v1`
+### 4. 阿里云通义千问 (Qwen)
+1）访问：https://bailian.console.aliyun.com/  
+2）登录并开通“模型服务”。  
+3）在“API-KEY 管理”中创建新的 API Key。  
+4）复制 Key 填入软件，Base URL 默认即可。  
+   默认地址：https://dashscope.aliyuncs.com/compatible-mode/v1  
 
-5. **智谱 GLM（ZhipuAI / GLM）**
-    1）访问：https://open.bigmodel.cn/ ，注册并获取 API Key。
-    2）将 API Key 填入软件。
-    3）Base URL（OpenAI 兼容方式）填写：`https://open.bigmodel.cn/api/paas/v4/`
+### 5. 智谱 GLM（ZhipuAI / GLM）
+1）访问：https://open.bigmodel.cn/ ，注册并获取 API Key。  
+2）将 API Key 填入软件。  
+3）Base URL（OpenAI 兼容方式）填写：https://open.bigmodel.cn/api/paas/v4/  
 
-6. **Google Gemini**
-    1）访问 Google AI Studio: https://aistudio.google.com/，在“API Keys”页面创建并管理 Gemini API Key。
-    2）将 Key 填入软件（或按软件要求设置环境变量）。
+### 6. Google Gemini
+1）访问 Google AI Studio: https://aistudio.google.com/，在“API Keys”页面创建并管理 Gemini API Key。  
+2）将 Key 填入软件（或按软件要求设置环境变量）。  
 
 
 ## 五、常见问题 (FAQ)
