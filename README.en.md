@@ -73,8 +73,8 @@ Also note that some models (such as Qwen) include sensitive-content filtering; w
 
 HiOCR is free and publicly available, but it does **not** grant default permission for commercial use. This project is licensed under the PolyForm Noncommercial License 1.0.0 (SPDX: `PolyForm-Noncommercial-1.0.0`). 
 
-1. You may use and redistribute it for noncommercial purposes (e.g., personal use, schools, research, and public-interest projects).  
-2. Commercial use is prohibited, including (but not limited to) integrating this software/source into paid products, selling paid services based on it, or delivering/running it for commercial projects. If you need a commercial license (free for individuals + paid for companies), contact the author for written permission.  
-3. For licensing or custom development, please contact the author.
+1) You may use and redistribute it for noncommercial purposes (e.g., personal use, schools, research, and public-interest projects).  
+2) Commercial use is prohibited, including (but not limited to) integrating this software/source into paid products, selling paid services based on it, or delivering/running it for commercial projects. If you need a commercial license (free for individuals + paid for companies), contact the author for written permission.  
+3) For licensing or custom development, please contact the author.
 
 Copyright © 2025. All Rights Reserved.
