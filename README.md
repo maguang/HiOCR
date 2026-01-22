@@ -1,4 +1,4 @@
-中文 | [English](README.en.md)
+<h3 align="center">中文 | <a href="README.en.md">English</a></h3>
 
 # 一、软件简介
 
