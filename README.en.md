@@ -5,12 +5,10 @@
 HiOCR is a beginner-friendly, drag-and-drop batch OCR (text recognition) tool built for people who need to process large numbers of PDFs and images without dealing with complex parameters or command-line workflows. On Windows, simply double-click the `.exe` to launch the app, drag files or folders to create a queue automatically, click Start, and follow the visual progress. When finished, HiOCR exports results automatically as Markdown or plain text.
 
 - Name: HiOCR
-- Latest version: v2.5.6
 - Supported OS: Windows 10/11
 - Developer: Guang Ma ([maguang.net](http://www.maguang.net/) | [haijiaoshi.com](http://www.haijiaoshi.com/))
 - Download & updates (GitHub): https://github.com/maguang/HiOCR
-- Download & updates (Baidu Netdisk): https://pan.baidu.com/s/1WchKiuVp9kKkqj4yqSBg4Q?pwd=6666 (code: 6666)
-- Last updated: 2026-01-18
+- Download & updates (Baidu Netdisk): https://gitee.com/guangma/HiOCR/releases
 
 **HiOCR itself is completely free.** Any API-key or usage fees are charged by the model providers, and are not affiliated with this software.
 
@@ -25,11 +23,11 @@ HiOCR is a beginner-friendly, drag-and-drop batch OCR (text recognition) tool bu
 # 3. Model Selection Guide
 
 **Recommended settings**
-- Modern Chinese & English documents: MinerU, Zhipu GLM, DeepSeek-OCR; DPI ≤ 200.
+- Modern Chinese & English documents: MinerU, Zhipu GLM, Paddle-OCR; DPI ≤ 200.
 - Chinese classics & handwriting: Qwen, Doubao, Gemini; DPI ≥ 300.
 - Non-Chinese classics & handwriting: Gemini; DPI ≥ 300.
 
-Most China-based paid models cost around 2–9 CNY per 1M tokens; Gemini 3 costs around 4–20 USD per 1M tokens. Each model has its own strengths—choose based on document type.
+Most China-based paid models cost around 2–10 CNY per 1M tokens; Gemini 3 costs around 4–20 USD per 1M tokens. Each model has its own strengths—choose based on document type.
 
 | Model | Pricing | Pros | Cons | API key |
 |---|---|---|---|---|
@@ -56,18 +54,18 @@ Uploading files and PDF splitting/preprocessing can take time—large PDFs may a
 A: This may happen if the images embedded in the PDF are too large and the model refuses to process them—try lowering the DPI (e.g., 150).  
 Also note that some models (such as Qwen) include sensitive-content filtering; when triggered, recognition may fail. This is model-side behavior and cannot be fully avoided.
 
-# 5. HiOCR v2.5.6 Release Notes
+# 5. HiOCR v2.6 Release Notes
 
 **✨ New features & UI**
-- Added `.txt` export (default remains `.md`).
-- Faster model switching via asynchronous pre-warm (near-instant switching).
-- Added update checking (VPN may be required in some regions).
-- Default output folder is now relative: an `OCR输出` folder next to the `.exe`.
-- Improved UI compatibility on low-resolution displays (not guaranteed on every setup).
+- Added Lite and Full versions. Lite version is suitable for newer Windows systems; Full version includes various installation packages, suitable for older computers missing dependency packages.
+- Added environment detection for missing components. If dependencies are missing, prompts will guide download and installation.
+- Optimized MinerU output files to preserve images in the `images` folder.
+- Added `gitee.com` as download source to ensure direct accessibility in China.
 
 **🤖 Model ecosystem updates**
-- Added new OpenRouter models: a new free model `GLM-4.6V-Flash`, plus higher-tier `gemini-3-pro-preview` and `gemini-3-flash-preview` to cover different accuracy needs.
-- Removed deprecated models: `doubao-1-5-vision-lite-250315` and `doubao-1-5-vision-pro-250328` (officially discontinued), and added the latest `doubao-seed-1-8-251228`.
+- Added new SiliconFlow models: `PaddleOCR-VL-1.5` (free) and `Qwen2.5-VL-7B-Instruct`.
+- Added new Zhipu AI models: `GLM-OCR` (high cost-performance ratio) and `GLM-4V-FlashX`.
+
 
 # 6. License (Noncommercial)
 
