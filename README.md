@@ -5,12 +5,10 @@
 HiOCR 是一款面向新手的傻瓜式批量 OCR（文字识别）工具，专为零基础用户处理大量 PDF 文档和图片设计：Windows系统下，双击exe文件打开界面，拖入文件/文件夹即可自动排队，一键开始后全程可视化进度，识别完成自动导出 Markdown或txt文件，无需学习复杂参数与命令。
 
 - 软件名称：HiOCR
-- 最新版本：v2.5.6
 - 适配系统：Windows 10/11等系统
 - 开发者：马光 （[http://www.maguang.net](http://www.maguang.net/) | [www.haijiaoshi.com](http://www.haijiaoshi.com/)）
 - 下载与更新地址1：<https://github.com/maguang/HiOCR>
-- 下载与更新地址2：<https://pan.baidu.com/s/1WchKiuVp9kKkqj4yqSBg4Q?pwd=6666> 提取码: 6666
-- 更新日期：2026-01-18
+- 下载与更新地址2：<https://gitee.com/guangma/HiOCR/releases> 
 
 **本软件完全免费！API Key等费用，由各公司收取，和本软件没任何利益关联。**
 
@@ -25,11 +23,11 @@ HiOCR 是一款面向新手的傻瓜式批量 OCR（文字识别）工具，专�
 # 三、模型选择指南
 
 **[推荐配置]**  
-* 中外文普通文档：推荐MinerU、智谱 GLM、DeepSeek-OCR；DPI≤200。  
+* 中外文普通文档：推荐MinerU、智谱 GLM、Paddle-OCR；DPI≤200。  
 * 中文古籍和手写体：推荐通义千问、豆包、Gemini；DPI≥300。  
 * 外文古籍和手写体：推荐Gemini；DPI≥300。
 
-国内收费模型，2-9元/百万token；Gemini 3，4-20美元/百万token。不同模型各有千秋，建议根据文档类型选择：
+国内收费模型，2-10元/百万token；Gemini 3，4-20美元/百万token。不同模型各有千秋，建议根据文档类型选择：
 
 | 模型名称 | 费用 | 优点 | 缺点 | API key申请地址 |
 |---|---|---|---|---|
@@ -44,7 +42,7 @@ HiOCR 是一款面向新手的傻瓜式批量 OCR（文字识别）工具，专�
 # 四、常见问题 (FAQ)
 
 **Q1: 如何升级？**  
-A: 可访问Github页面：<https://github.com/maguang/HiOCR/releases>，或点击"帮助"→"检查更新"。  
+A: 可访问Gitee页面：<https://gitee.com/guangma/HiOCR/releases>，或Github页面：<https://github.com/maguang/HiOCR/releases>，或点击"帮助"→"检查更新"。  
 下载文件后，解压缩即可。软件加载后，会在根目录下自动生成"user_config.json"配置文件，API key会保存在此处。版本比较大的升级，如添加或删减模型，则需要删除旧版本，然后重新填入API key。
 注意：版本比较大的升级，比如从v2.3升级到v2.5.6，因添加或删减了模型，则需要先删除旧版本配置文件，然后重新填入API key。
 
@@ -56,20 +54,19 @@ A: 请检查是否添加了文件，且 API key 是否已正确设置并通过�
 A: 可能是 PDF 每页图片过大导致模型拒识，尝试调低 DPI (如 150)。  
 此外，有些模型，比如Qwen内嵌有敏感词检测，触发时，也会无法识别，这个和大语言模型有关，无法避免。
 
-# 五、HiOCR v2.5.6 更新说明
+# 五、HiOCR v2.6 更新说明
 
 **✨ 新增功能与外观**
 
-- 新增可选择导出为txt格式，默认导出为md格式。
-- 优化模型切换速度，采用异步预热，实现秒切。
-- 增加检测新版本功能，有些地区可能需要VPN。
-- 默认输出目录为相对位置，即在同目录下的"OCR输出"文件夹。
-- 优化软件界面在低分辨率下的兼容问题，但不能保证100%兼容。
+- 新增精简版和完全版两个版本。精简版适合新Windows系统；完全版自带各类安装包，适合缺失各种依赖包的旧电脑。
+- 增加检测电脑环境是否缺失的问题。如果缺失，会提示下载和安装方法。
+- 优化MinerU输出文件，保留images文件夹下的图片。
+- 新增下载地址为gitee.com，确保中国可直接使用。
 
 **🤖 模型生态更新**
 
-- 接入OpenRouter新模型：新增免费模型：GLM-4.6V-Flash；新增高阶模型：gemini-3-pro-preview、gemini-3-flash-preview，满足不同精度的识别需求。
-- 移除旧模型：移除字节跳动doubao-1-5-vision-lite-250315和doubao-1-5-vision-pro-250328两款官方停止支持的模型；新增最新的模型doubao-seed-1-8-251228。
+- 接入硅基流动两个新模型：PaddleOCR-VL-1.5（免费），Qwen2.5-VL-7B-lnstruct。
+- 接入智谱两个新模型：GLM-OCR（性价比较高）和GLM-4.6V-FlashX。
 
 # 六、LICENSE 声明（非商业使用许可）
 
