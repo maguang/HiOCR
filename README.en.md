@@ -7,8 +7,8 @@ HiOCR is a beginner-friendly, drag-and-drop batch OCR (text recognition) tool bu
 - Name: HiOCR
 - Supported OS: Windows 10/11
 - Developer: Guang Ma ([maguang.net](http://www.maguang.net/) | [haijiaoshi.com](http://www.haijiaoshi.com/))
-- Download & updates (GitHub): https://github.com/maguang/HiOCR
-- Download & updates (Baidu Netdisk): https://gitee.com/guangma/HiOCR/releases
+- Download & updates: https://github.com/maguang/HiOCR
+- Download & updates: https://gitee.com/guangma/HiOCR/releases
 
 **HiOCR itself is completely free.** Any API-key or usage fees are charged by the model providers, and are not affiliated with this software.
 
@@ -54,17 +54,13 @@ Uploading files and PDF splitting/preprocessing can take time—large PDFs may a
 A: This may happen if the images embedded in the PDF are too large and the model refuses to process them—try lowering the DPI (e.g., 150).  
 Also note that some models (such as Qwen) include sensitive-content filtering; when triggered, recognition may fail. This is model-side behavior and cannot be fully avoided.
 
-# 5. HiOCR v2.6 Release Notes
+# 5. HiOCR v2.7 Release Notes
 
 **✨ New features & UI**
-- Added Lite and Full versions. Lite version is suitable for newer Windows systems; Full version includes various installation packages, suitable for older computers missing dependency packages.
-- Added environment detection for missing components. If dependencies are missing, prompts will guide download and installation.
-- Optimized MinerU output files to preserve images in the `images` folder.
-- Added `gitee.com` as download source to ensure direct accessibility in China.
+-	Added English version with direct switching capability.
 
 **🤖 Model ecosystem updates**
-- Added new SiliconFlow models: `PaddleOCR-VL-1.5` (free) and `Qwen2.5-VL-7B-Instruct`.
-- Added new Zhipu AI models: `GLM-OCR` (high cost-performance ratio) and `GLM-4V-FlashX`.
+- Added two latest large language models: Qwen3.5-plus and Doubao-seed-2-0-pro-260215
 
 
 # 6. License (Noncommercial)
