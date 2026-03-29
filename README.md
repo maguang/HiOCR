@@ -7,8 +7,8 @@ HiOCR 是一款面向新手的傻瓜式批量 OCR（文字识别）工具，专�
 - 软件名称：HiOCR
 - 适配系统：Windows 10/11等系统
 - 开发者：马光 （[http://www.maguang.net](http://www.maguang.net/) | [www.haijiaoshi.com](http://www.haijiaoshi.com/)）
-- 下载与更新地址1：<https://github.com/maguang/HiOCR>
-- 下载与更新地址2：<https://gitee.com/guangma/HiOCR/releases> 
+- 下载与更新地址1：<https://github.com/maguang/HiOCR> （国际）
+- 下载与更新地址2：<https://gitee.com/guangma/HiOCR/releases> （国内）
 
 **本软件完全免费！API Key等费用，由各公司收取，和本软件没任何利益关联。**
 
@@ -54,19 +54,15 @@ A: 请检查是否添加了文件，且 API key 是否已正确设置并通过�
 A: 可能是 PDF 每页图片过大导致模型拒识，尝试调低 DPI (如 150)。  
 此外，有些模型，比如Qwen内嵌有敏感词检测，触发时，也会无法识别，这个和大语言模型有关，无法避免。
 
-# 五、HiOCR v2.6 更新说明
+# 五、HiOCR v2.7 更新说明
 
 **✨ 新增功能与外观**
 
-- 新增精简版和完全版两个版本。精简版适合新Windows系统；完全版自带各类安装包，适合缺失各种依赖包的旧电脑。
-- 增加检测电脑环境是否缺失的问题。如果缺失，会提示下载和安装方法。
-- 优化MinerU输出文件，保留images文件夹下的图片。
-- 新增下载地址为gitee.com，确保中国可直接使用。
+- 新增英文版，可直接切换。
 
 **🤖 模型生态更新**
 
-- 接入硅基流动两个新模型：PaddleOCR-VL-1.5（免费），Qwen2.5-VL-7B-lnstruct。
-- 接入智谱两个新模型：GLM-OCR（性价比较高）和GLM-4.6V-FlashX。
+- 新增Qwen3.5-plus、Doubao-seed-2-0-pro-260215两个最新的大模型
 
 # 六、LICENSE 声明（非商业使用许可）
 
